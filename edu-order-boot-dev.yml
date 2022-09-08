@@ -44,7 +44,7 @@ eureka:
     instance-id: ${spring.cloud.client.ip-address}:${server.port}
 ali:
   sms:
-    signName: 阿里云短信测试
-    templateCode: SMS_154950909
-    assessKeyId: LTAI5tABE4qZ2pLKJpig3vkZ
-    assessKeySecret: HbiHXvBM7u6tyzVe50TpvbgQazf8cx
+    signName: 拉勾教育通知
+    templateCode: SMS_177536068
+    assessKeyId: LTAI4FwKDkeZ6StZvRxg5RDf
+    assessKeySecret: 09IMDRUia2uIC7HMXpSmM5CiXuUgvf
