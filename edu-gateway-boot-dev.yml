@@ -21,3 +21,33 @@ spring:
             - Path=/ad/**
           filters:
             - StripPrefix=1   # 去掉uri中的第一部分
+          - id: edu-routes-course
+          uri: lb://edu-course-boot
+          predicates:
+            - Path=/course/**
+          filters:
+            - StripPrefix=1
+        - id: edu-routes-comment
+          uri: lb://edu-comment-boot
+          predicates:
+            - Path=/comment/**
+          filters:
+            - StripPrefix=1
+        - id: edu-routes-order
+          uri: lb://edu-order-boot
+          predicates:
+            - Path=/order/**
+          filters:
+            - StripPrefix=1
+        - id: edu-routes-pay
+          uri: lb://edu-pay-boot
+          predicates:
+            - Path=/pay/**
+          filters:
+            - StripPrefix=1
+        - id: edu-routes-user
+          uri: lb://edu-user-boot
+          predicates:
+            - Path=/user/**
+          filters:
+            - StripPrefix=1
